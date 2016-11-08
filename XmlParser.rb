@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'open-uri'
+
 class XmlParser
   def self.parse url
     @xml = Nokogiri::HTML(open(url))
